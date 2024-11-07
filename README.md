@@ -10,7 +10,7 @@ bắt đầu nhập lệnh trong ubuntu:
   
     catkin_make
   
-    cd ..
+    cd
   
 bắt đầu vào rviz
 
