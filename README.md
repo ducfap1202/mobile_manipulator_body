@@ -4,7 +4,7 @@ bắt đầu nhập lệnh trong ubuntu:
 
     cd catkin_ws/src
   
-  git clone https://github.com/ducfap1202/mobile_manipulator_body.git
+      git clone https://github.com/ducfap1202/mobile_manipulator_body.git
   
     cd ..
   
