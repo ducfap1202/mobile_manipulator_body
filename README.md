@@ -14,9 +14,8 @@ bắt đầu nhập lệnh trong ubuntu:
   
 bắt đầu vào rviz
 
-    roscd mobile_manipulator_body
+    roscd mobile_manipulator_body/urdf
   
-    cd urdf
   
     roslaunch urdf_tutorial display.launch model:=robot_base.urdf
   
