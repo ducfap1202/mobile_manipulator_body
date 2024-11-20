@@ -34,4 +34,9 @@ mở thêm 1 ubuntu 20.04 mới để mở bảng điều khiển
 bảng điều khiển sẽ như trên thì ta nhập thêm đoạn code này vào hộp thoại bên cạnh nút stop như trong hình
 
     /robot_base_velocity_controller/cmd_vel
+
+điều khiển bằng bàn phím
+
+    rosrun teleop_twist_keyboard teleop_twist_keyboard.py cmd_vel:=/robot_base_velocity_controller/cmd_vel
+    
   
