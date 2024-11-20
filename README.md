@@ -39,4 +39,6 @@ bảng điều khiển sẽ như trên thì ta nhập thêm đoạn code này v�
 
     rosrun teleop_twist_keyboard teleop_twist_keyboard.py cmd_vel:=/robot_base_velocity_controller/cmd_vel
     
-  
+mở world + robot gazebo 
+
+    roslaunch mobile_manipulator_body tett.launch
