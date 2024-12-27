@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<launch>
+
+<include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name" value="$(find mobile_manipulator_body)/worlds/map.world"/>
+</include>
+
+<include file="$(find urdf_tutorial)/launch/display.launch">
+	<arg name="rvizconfig" value="$(find mobile_manipulator_body)/urdf/config.rviz"/>
+</include>
+
+  <param name="robot_description" textfile="$(find mobile_manipulator_body)/urdf/robot_base.urdf" />
+
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -model robot_base" />
+  <rosparam command="load" file="$(find mobile_manipulator_body)/config/control.yaml" />
+  <node name="base_controller_spawner" pkg="controller_manager" type="spawner" args="robot_base_joint_publisher robot_base_velocity_controller"/>
+
+</launch>
